@@ -1,0 +1,9 @@
+TO DO
+
+deploy to config
+config files
+exception handeling
+form/input validation 
+DOCKER
+unit/integration testing
+dev/UAT/prod
