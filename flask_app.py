@@ -17,7 +17,7 @@ def add_to_fake_stuff():
 
 
 @app.route('/predictions', methods=['POST'])
-def predict():
+def gen_predict():
 	#import pdb; pdb.set_trace()
 	#handle data
 	dtest_json = request.get_json()
@@ -27,15 +27,17 @@ def predict():
 	filename = '/Users/jacobhumber/python_projects/simple_model_api/ml_model/simple_logit.pkl'
 	model = joblib.load(filename)
 
-
-if __name__ == '__main__':
-    app.run()	
-
 	prediction = pd.DataFrame(model.predict(dtest))
 
 	response = jsonify(prediction.to_json(orient="records"))
 
 	return(response)
+
+
+if __name__ == '__main__':
+    app.run()	
+
+
 
 
 

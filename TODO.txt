@@ -1,6 +1,6 @@
 TO DO
 
-deploy to config
+deploy to heroku
 config files
 exception handeling
 form/input validation 
