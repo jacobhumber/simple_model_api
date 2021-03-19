@@ -7,7 +7,7 @@ Flask-DebugToolbar==0.10.1
 gunicorn==19.8.1
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 numpy==1.14.3
 pandas==0.23.0
